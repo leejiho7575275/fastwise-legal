@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FastWise — Support / 지원</title>
+<style>
+  :root { --ink:#2a2018; --muted:#6b6055; --line:#eadfce; --accent:#b45309; --bg:#fbf6ef; --card:#ffffff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; line-height:1.7; }
+  .wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:6px; }
+  .logo { width:44px; height:44px; border-radius:12px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:22px; }
+  h1 { font-size:26px; margin:18px 0 4px; }
+  h2 { font-size:18px; margin:26px 0 6px; }
+  h3 { font-size:15px; margin:16px 0 2px; }
+  .meta { color:var(--muted); font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin-top:18px; }
+  p, li { font-size:15px; }
+  a { color:var(--accent); }
+  .toggle { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; margin:18px 0 4px; }
+  .toggle button { border:none; background:var(--card); color:var(--muted); padding:8px 18px; font-weight:700; cursor:pointer; font-size:14px; }
+  .toggle button.on { background:var(--accent); color:#fff; }
+  .lang { display:none; } .lang.on { display:block; }
+  .mail { display:inline-block; margin-top:6px; font-weight:700; }
+  footer { color:var(--muted); font-size:13px; margin-top:36px; text-align:center; }
+  footer a { margin:0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">F</div>
+    <div>
+      <div style="font-weight:800; letter-spacing:.04em; color:var(--muted); font-size:12px;">FASTWISE</div>
+      <div style="font-weight:700;">Intermittent Fasting</div>
+    </div>
+  </header>
+
+  <div class="toggle">
+    <button id="btn-en" class="on" onclick="setLang('en')">English</button>
+    <button id="btn-ko" onclick="setLang('ko')">한국어</button>
+  </div>
+
+  <section id="lang-en" class="lang on">
+    <h1>Support</h1>
+    <p class="meta">We're happy to help with FastWise.</p>
+    <div class="card">
+      <h2>Contact us</h2>
+      <p>Email us anytime — we usually reply within a couple of days.</p>
+      <a class="mail" href="mailto:leejiho7575@gmail.com?subject=FastWise%20Support">leejiho7575@gmail.com</a>
+
+      <h2>Common questions</h2>
+      <h3>How do I back up or restore my data?</h3>
+      <p>Open <strong>Settings → iCloud Backup</strong> to back up automatically with your Apple ID, or use <strong>File Backup</strong> to export/import a backup file (you can choose whether to include photos).</p>
+      <h3>How do I cancel my subscription?</h3>
+      <p>Subscriptions are billed by Apple. Cancel anytime in <strong>iPhone Settings → [your name] → Subscriptions</strong>. Cancellation takes effect at the end of the current period.</p>
+      <h3>How do I restore a purchase?</h3>
+      <p>Open the Pro screen and tap <strong>Restore purchases</strong>.</p>
+      <h3>How do the AI features work?</h3>
+      <p>On supported devices, on-device Apple Intelligence is used for free. You can also add your own Google Gemini API key in <strong>Settings</strong> for smarter photo analysis and coaching. Your key stays on your device.</p>
+      <h3>How do I show my real activity (Health)?</h3>
+      <p>In the iPhone <strong>Health</strong> app, allow FastWise to read Steps, Active Energy, Exercise Minutes, and Heart Rate.</p>
+      <h3>How do I delete all my data?</h3>
+      <p>Open <strong>Settings → Reset all data</strong>, or delete the app.</p>
+
+      <p style="margin-top:18px;color:var(--muted);font-size:13px;">FastWise does not provide medical advice. Consult a professional before making health decisions.</p>
+    </div>
+  </section>
+
+  <section id="lang-ko" class="lang">
+    <h1>지원</h1>
+    <p class="meta">FastWise 사용에 도움을 드릴게요.</p>
+    <div class="card">
+      <h2>문의하기</h2>
+      <p>언제든 이메일로 보내주세요 — 보통 며칠 안에 답장드립니다.</p>
+      <a class="mail" href="mailto:leejiho7575@gmail.com?subject=FastWise%20문의">leejiho7575@gmail.com</a>
+
+      <h2>자주 묻는 질문</h2>
+      <h3>데이터 백업·복원은 어떻게 하나요?</h3>
+      <p><strong>설정 → iCloud 백업</strong>에서 Apple ID로 자동 백업하거나, <strong>파일 백업</strong>으로 백업 파일을 내보내기/불러오기 할 수 있어요(사진 포함 여부 선택 가능).</p>
+      <h3>구독 해지는 어떻게 하나요?</h3>
+      <p>구독은 Apple이 청구합니다. <strong>아이폰 설정 → [내 이름] → 구독</strong>에서 언제든 해지할 수 있고, 현재 기간 종료 시 적용됩니다.</p>
+      <h3>구매 복원은 어떻게 하나요?</h3>
+      <p>Pro 화면에서 <strong>구매 복원</strong>을 누르세요.</p>
+      <h3>AI 기능은 어떻게 동작하나요?</h3>
+      <p>지원 기기에서는 기기 내 Apple Intelligence가 무료로 사용됩니다. <strong>설정</strong>에서 본인의 Google Gemini API 키를 추가하면 더 정확한 사진 분석·코칭을 쓸 수 있어요. 키는 기기에만 보관됩니다.</p>
+      <h3>실제 활동량(건강)을 보려면?</h3>
+      <p>아이폰 <strong>건강</strong> 앱에서 FastWise에 걸음 수·활동 에너지·운동 시간·심박수 읽기를 허용하세요.</p>
+      <h3>모든 데이터를 삭제하려면?</h3>
+      <p><strong>설정 → 데이터 초기화</strong>를 누르거나 앱을 삭제하세요.</p>
+
+      <p style="margin-top:18px;color:var(--muted);font-size:13px;">FastWise는 의료 조언을 제공하지 않습니다. 건강 결정 전 전문가와 상담하세요.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 FastWise · <a href="./">Privacy</a>·<a href="./terms.html">Terms</a></footer>
+</div>
+<script>
+  function setLang(l){var en=l==='en';
+    document.getElementById('lang-en').classList.toggle('on',en);
+    document.getElementById('lang-ko').classList.toggle('on',!en);
+    document.getElementById('btn-en').classList.toggle('on',en);
+    document.getElementById('btn-ko').classList.toggle('on',!en);
+    document.documentElement.lang=l;}
+  if((navigator.language||'').toLowerCase().startsWith('ko'))setLang('ko');
+</script>
+</body>
+</html>
