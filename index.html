@@ -159,7 +159,7 @@
     </div>
   </section>
 
-  <footer>© 2026 FastWise · <span id="ftxt">Privacy Policy</span></footer>
+  <footer>© 2026 FastWise · <a href="./terms.html">Terms of Use / 이용약관</a></footer>
 </div>
 
 <script>
@@ -170,7 +170,6 @@
     document.getElementById('btn-en').classList.toggle('on', en);
     document.getElementById('btn-ko').classList.toggle('on', !en);
     document.documentElement.lang = l;
-    document.getElementById('ftxt').textContent = en ? 'Privacy Policy' : '개인정보 처리방침';
   }
   // 기기 언어가 한국어면 한국어로 시작
   if ((navigator.language || '').toLowerCase().startsWith('ko')) setLang('ko');
